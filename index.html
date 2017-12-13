@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mon morpion avec Angularjs</title>
+  <script type="text/javascript" src="dist/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="dist/app.min.css">
+</head>
+<body ng-app="Morpion" ng-controller="MorpionController as ctrl">
+  <h1 ng-show="!ctrl.playing"><a href="" ng-click="ctrl.start()">Commencer la partie</a></h1>
+  <div class="game" ng-show="ctrl.playing">
+    <morpion></morpion>
+  </div>
+</body>
+</html>

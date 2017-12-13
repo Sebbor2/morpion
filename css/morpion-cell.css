@@ -1,0 +1,15 @@
+td div.red {
+	width: 92px;
+	height: 92px;
+	background-image: url("../assets/red.png");
+	background-size: cover;
+	margin: auto;
+}
+
+td div.green {
+	height: 92px;
+	width: 92px;
+	background-image: url("../assets/green.png");
+	background-size: cover;
+	margin: auto;
+}
