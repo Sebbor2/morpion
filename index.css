@@ -1,0 +1,38 @@
+#morpion {
+    display: none;
+}
+
+#results {
+    display: none;
+}
+#morpion table {
+    margin: auto;
+}
+
+#morpion table, #morpion td {
+    border: 1px solid black;
+}
+
+#morpion td {
+    height: 100px;
+    width: 100px;
+}
+
+td div.redPlayer {
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    border: 3px solid red;
+    margin: auto;
+}
+
+td div.bluePlayer:before {
+    width: 100%;
+    height: 100%;
+    font-size: 86px;
+    font-family: sans-serif;
+    display: block;
+    text-align: center;
+    content: 'X';
+    color: blue;
+}
