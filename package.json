@@ -1,0 +1,31 @@
+{
+  "name": "morpion",
+  "version": "0.0.1",
+  "description": "Un jeu de morpion avec Angularjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "lite-server",
+    "dev": "grunt && grunt dev",
+    "start": "concurrently \"npm run dev\" \"npm run serve\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebbor2/morpion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebbor2/morpion/issues"
+  },
+  "homepage": "https://github.com/Sebbor2/morpion#readme",
+  "dependencies": {
+    "angular": "^1.6.7",
+    "concurrently": "^3.5.1",
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "lite-server": "^2.3.0"
+  }
+}
