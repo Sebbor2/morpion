@@ -7,9 +7,29 @@
   <link rel="stylesheet" type="text/css" href="dist/app.min.css">
 </head>
 <body ng-app="Morpion" ng-controller="MorpionController as ctrl">
-  <h1 ng-show="!ctrl.playing"><a href="" ng-click="ctrl.start()">Commencer la partie</a></h1>
-  <div class="game" ng-show="ctrl.playing">
+  <h1 ng-show="ctrl.showInit"><a href="" ng-click="ctrl.start()">Commencer la partie</a></h1>
+    <div class="info-game" ng-show="ctrl.showMorpion">
+        {{ctrl.playing ? ctrl.currentPlayer + ' to play' : !ctrl.isDraw ? ctrl.winner + ' gagne cette partie' : 'Match Nul'}}
+    </div>
+  <div class="game" ng-show="ctrl.showMorpion">
     <morpion></morpion>
+  </div>
+    <div ng-show="ctrl.showMorpion">
+        <input class="newgame" type="button" value="Nouvelle Partie" ng-click="ctrl.restart()" />
+    </div>
+    <div ng-show="ctrl.showMorpion">
+        <input class="result" type="button" value="Afficher le score" ng-click="ctrl.showScore()" />
+    </div>
+    <div class="result" ng-show="ctrl.showResults">
+        <table>
+            <tr>
+                <td>Red : {{ctrl.redScore}} </td>
+                <td>Green : {{ctrl.greenScore}} </td>
+            </tr>
+        </table>
+        <div ng-show="ctrl.showResults">
+        <input type="button" value="Retour au jeu" ng-click="ctrl.showGame()" />
+    </div>
   </div>
 </body>
 </html>

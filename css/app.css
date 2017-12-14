@@ -1,3 +1,11 @@
+div.info-game {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 300px;
+    background: lightskyblue;
+}
+
 div.game {
   width: 300px;
   height: 300px;
@@ -18,4 +26,13 @@ table.morpion, td.morpion-cell {
 td div.cell-content {
   height: 92px;
   width: 92px;
+}
+
+input.newgame, input.result {
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 30px;
+      background-image: url("../assets/bgmorpion.png");
+  background-size: cover;
 }
